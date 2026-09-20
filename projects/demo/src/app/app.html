@@ -1,0 +1,20 @@
+<ui-grid
+  [dataSource]="employees()"
+  [columnDefs]="columnDefs()"
+  headerHeight="50px"
+  rowHeight="50px"
+>
+  <ng-template uiGridCell="firstName" let-item let-value="value">
+    {{ value }}
+  </ng-template>
+
+  <ng-template uiGridCell="lastName" let-item let-value="value">
+    {{ value }}
+  </ng-template>
+
+  <ng-template uiGridCell="role" let-item let-value="value">
+    <span class="role-input">
+      <input [value]="value" />
+    </span>
+  </ng-template>
+</ui-grid>

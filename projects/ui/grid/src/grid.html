@@ -1,0 +1,34 @@
+<div class="grid">
+  <div
+    class="row header"
+    [style.grid-auto-columns]="gridColumnWidths"
+    [style.grid-auto-rows]="headerHeight()"
+  >
+    @for (columnDef of columnDefs(); track columnDef.field) {
+      <div class="column">
+        {{ columnDef.name }}
+      </div>
+    }
+  </div>
+  @for (item of dataSource(); track item.id) {
+    <div
+      class="row"
+      [style.grid-auto-columns]="gridColumnWidths"
+      [style.grid-auto-rows]="rowHeight()"
+    >
+      @for (columnDef of columnDefs(); track columnDef.field) {
+        <div class="column">
+          <ng-container
+            [ngTemplateOutlet]="getCellTemplate(columnDef.field)"
+            [ngTemplateOutletContext]="{
+              $implicit: item,
+              item: item,
+              value: item[columnDef.field],
+            }"
+          >
+          </ng-container>
+        </div>
+      }
+    </div>
+  }
+</div>

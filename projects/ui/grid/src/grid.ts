@@ -26,7 +26,7 @@ export class Grid<T extends GridData> {
 
   private readonly cellTemplates = contentChildren(GridCell<T>);
 
-  getCellTemplate(field: keyof T): TemplateRef<GridCellContext<T>> | undefined {
+  protected getCellTemplate(field: keyof T): TemplateRef<GridCellContext<T>> | undefined {
     const cell = this.cellTemplates().find((template) => template.uiGridCell() === field);
 
     if (!cell) {
@@ -50,7 +50,7 @@ export class Grid<T extends GridData> {
     return cell.template;
   }
 
-  get gridColumnWidths(): string {
+  protected get gridColumnWidths(): string {
     return this.columnDefs()
       .map((c) => c.width || '1fr')
       .join(' ');

@@ -40,7 +40,8 @@
           "options": {
             "configDir": "projects/ui/.storybook",
             "browserTarget": "ui:build",
-            "port": 6006
+            "port": 6006,
+            "styles": ["projects/ui/themes/src/default.scss"]
           }
         },
         "build-storybook": {

@@ -4,6 +4,10 @@
   headerHeight="50px"
   rowHeight="50px"
 >
+  <ng-template uiGridCell="id" let-item let-value="value">
+    {{ value }}
+  </ng-template>
+
   <ng-template uiGridCell="firstName" let-item let-value="value">
     {{ value }}
   </ng-template>

@@ -30,6 +30,7 @@ export class App {
   ]);
 
   readonly columnDefs = signal<ColumnDef<Employee>[]>([
+    { field: 'id', name: 'ID', width: '100px' },
     { field: 'firstName', name: 'First name', width: '200px' },
     { field: 'lastName', name: 'Last name', width: '1fr' },
     { field: 'role', name: 'Role', width: '200px' },

@@ -16,6 +16,11 @@ $border: var(--ngx-ui-border-width) solid var(--ngx-ui-color-border);
   height: 100%;
 }
 
+.tbody {
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
 .row {
   display: grid;
   grid-auto-flow: column;
@@ -35,6 +40,8 @@ $border: var(--ngx-ui-border-width) solid var(--ngx-ui-color-border);
 .th {
   font-weight: bold;
   background-color: var(--ngx-ui-color-surface-subtle);
+  scrollbar-gutter: stable;
+  overflow-y: hidden;
 }
 
 .td {

@@ -27,6 +27,54 @@ export class App {
       lastName: 'Iancu',
       role: 'Frontend Engineer',
     },
+    {
+      id: '1',
+      firstName: 'Robert',
+      lastName: 'Iancu',
+      role: 'Frontend Engineer',
+    },
+    {
+      id: '2',
+      firstName: 'Marius',
+      lastName: 'Iancu',
+      role: 'Frontend Engineer',
+    },
+    {
+      id: '1',
+      firstName: 'Robert',
+      lastName: 'Iancu',
+      role: 'Frontend Engineer',
+    },
+    {
+      id: '2',
+      firstName: 'Marius',
+      lastName: 'Iancu',
+      role: 'Frontend Engineer',
+    },
+    {
+      id: '1',
+      firstName: 'Robert',
+      lastName: 'Iancu',
+      role: 'Frontend Engineer',
+    },
+    {
+      id: '2',
+      firstName: 'Marius',
+      lastName: 'Iancu',
+      role: 'Frontend Engineer',
+    },
+    {
+      id: '1',
+      firstName: 'Robert',
+      lastName: 'Iancu',
+      role: 'Frontend Engineer',
+    },
+    {
+      id: '2',
+      firstName: 'Marius',
+      lastName: 'Iancu',
+      role: 'Frontend Engineer',
+    },
   ]);
 
   readonly columnDefs = signal<ColumnDef<Employee>[]>([

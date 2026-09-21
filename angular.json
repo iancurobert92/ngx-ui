@@ -76,7 +76,7 @@
                 "input": "projects/demo/public"
               }
             ],
-            "styles": ["projects/demo/src/styles.scss"]
+            "styles": ["projects/demo/src/styles.scss", "projects/ui/themes/src/default.scss"]
           },
           "configurations": {
             "production": {

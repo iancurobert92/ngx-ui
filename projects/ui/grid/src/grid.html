@@ -1,6 +1,6 @@
 <div class="grid">
   <div
-    class="row header"
+    class="row th"
     [style.grid-auto-columns]="gridColumnWidths"
     [style.grid-auto-rows]="headerHeight()"
   >
@@ -12,7 +12,7 @@
   </div>
   @for (item of dataSource(); track item.id) {
     <div
-      class="row"
+      class="row td"
       [style.grid-auto-columns]="gridColumnWidths"
       [style.grid-auto-rows]="rowHeight()"
     >

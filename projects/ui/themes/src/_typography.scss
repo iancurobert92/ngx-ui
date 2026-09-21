@@ -1,0 +1,43 @@
+:root {
+  /* Font families */
+  --ngx-ui-font-family-sans:
+    Inter, system-ui, -apple-system, blinkmacsystemfont, 'Segoe UI', sans-serif;
+
+  --ngx-ui-font-family-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;
+
+  /* Font sizes */
+  --ngx-ui-font-size-xs: 0.75rem;
+  --ngx-ui-font-size-sm: 0.875rem;
+  --ngx-ui-font-size-md: 1rem;
+  --ngx-ui-font-size-lg: 1.125rem;
+  --ngx-ui-font-size-xl: 1.25rem;
+  --ngx-ui-font-size-2xl: 1.5rem;
+
+  /* Font weights */
+  --ngx-ui-font-weight-regular: 400;
+  --ngx-ui-font-weight-medium: 500;
+  --ngx-ui-font-weight-semibold: 600;
+  --ngx-ui-font-weight-bold: 700;
+
+  /* Line heights */
+  --ngx-ui-line-height-tight: 1.2;
+  --ngx-ui-line-height-normal: 1.5;
+  --ngx-ui-line-height-relaxed: 1.65;
+
+  /* Ready-to-use semantic typography */
+  --ngx-ui-body-font-size: var(--ngx-ui-font-size-md);
+  --ngx-ui-body-font-weight: var(--ngx-ui-font-weight-regular);
+  --ngx-ui-body-line-height: var(--ngx-ui-line-height-normal);
+
+  --ngx-ui-label-font-size: var(--ngx-ui-font-size-sm);
+  --ngx-ui-label-font-weight: var(--ngx-ui-font-weight-medium);
+  --ngx-ui-label-line-height: var(--ngx-ui-line-height-tight);
+
+  --ngx-ui-caption-font-size: var(--ngx-ui-font-size-xs);
+  --ngx-ui-caption-font-weight: var(--ngx-ui-font-weight-regular);
+  --ngx-ui-caption-line-height: var(--ngx-ui-line-height-normal);
+
+  --ngx-ui-heading-font-size: var(--ngx-ui-font-size-xl);
+  --ngx-ui-heading-font-weight: var(--ngx-ui-font-weight-semibold);
+  --ngx-ui-heading-line-height: var(--ngx-ui-line-height-tight);
+}

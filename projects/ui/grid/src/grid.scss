@@ -1,6 +1,8 @@
-$border: 1px solid grey;
+$border: var(--ngx-ui-border-width) solid var(--ngx-ui-color-border);
 
 .grid {
+  font-family: var(--ngx-ui-font-family-sans);
+  font-size: var(--ngx-ui-font-size-sm);
   display: grid;
   overflow-x: auto;
   border: $border;
@@ -15,8 +17,17 @@ $border: 1px solid grey;
   }
 }
 
-.header {
+.th {
   font-weight: bold;
+}
+
+.td {
+  background-color: var(--ngx-ui-color-surface);
+
+  &:hover {
+    background-color: var(--ngx-ui-color-surface-hover);
+    cursor: pointer;
+  }
 }
 
 .column {

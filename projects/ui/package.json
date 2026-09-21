@@ -13,6 +13,13 @@
     "./grid": {
       "types": "./types/ui-grid.d.ts",
       "default": "./fesm2022/ui-grid.mjs"
+    },
+    "./themes": {
+      "types": "./types/ui-themes.d.ts",
+      "default": "./fesm2022/ui-themes.mjs"
+    },
+    "./themes/default.scss": {
+      "style": "./themes/default.scss"
     }
   }
 }

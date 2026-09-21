@@ -1,0 +1,49 @@
+:root {
+  /* Surface */
+  --ngx-ui-color-surface: #ffffff;
+  --ngx-ui-color-surface-subtle: #f8fafc;
+  --ngx-ui-color-surface-hover: #f1f5f9;
+  --ngx-ui-color-surface-selected: #eff6ff;
+  --ngx-ui-color-surface-disabled: #f1f5f9;
+
+  /* Text */
+  --ngx-ui-color-text: #0f172a;
+  --ngx-ui-color-text-muted: #475569;
+  --ngx-ui-color-text-subtle: #64748b;
+  --ngx-ui-color-text-disabled: #94a3b8;
+  --ngx-ui-color-text-inverse: #ffffff;
+
+  /* Border */
+  --ngx-ui-color-border: #e2e8f0;
+  --ngx-ui-color-border-strong: #cbd5e1;
+  --ngx-ui-color-border-disabled: #e2e8f0;
+
+  /* Primary action */
+  --ngx-ui-color-primary: #2563eb;
+  --ngx-ui-color-primary-hover: #1d4ed8;
+  --ngx-ui-color-primary-active: #1e40af;
+  --ngx-ui-color-primary-disabled: #bfdbfe;
+  --ngx-ui-color-on-primary: #ffffff;
+
+  /* Semantic states */
+  --ngx-ui-color-success: #15803d;
+  --ngx-ui-color-success-subtle: #dcfce7;
+  --ngx-ui-color-on-success: #ffffff;
+
+  --ngx-ui-color-warning: #b45309;
+  --ngx-ui-color-warning-subtle: #fef3c7;
+  --ngx-ui-color-on-warning: #ffffff;
+
+  --ngx-ui-color-danger: #dc2626;
+  --ngx-ui-color-danger-hover: #b91c1c;
+  --ngx-ui-color-danger-subtle: #fee2e2;
+  --ngx-ui-color-on-danger: #ffffff;
+
+  --ngx-ui-color-info: #0369a1;
+  --ngx-ui-color-info-subtle: #e0f2fe;
+  --ngx-ui-color-on-info: #ffffff;
+
+  /* Accessibility */
+  --ngx-ui-color-focus-ring: #2563eb;
+  --ngx-ui-color-selection: #bfdbfe;
+}

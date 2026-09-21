@@ -1,0 +1,28 @@
+:root {
+  /* Focus */
+  --ngx-ui-focus-ring-width: 3px;
+  --ngx-ui-focus-ring-offset: 2px;
+
+  /* Disabled state */
+  --ngx-ui-opacity-disabled: 0.5;
+  --ngx-ui-cursor-disabled: not-allowed;
+
+  /* Animation */
+  --ngx-ui-duration-fast: 120ms;
+  --ngx-ui-duration-normal: 200ms;
+  --ngx-ui-easing-standard: ease;
+
+  /* Layering */
+  --ngx-ui-z-index-dropdown: 1000;
+  --ngx-ui-z-index-overlay: 1100;
+  --ngx-ui-z-index-modal: 1200;
+  --ngx-ui-z-index-toast: 1300;
+  --ngx-ui-z-index-tooltip: 1400;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ngx-ui-duration-fast: 0ms;
+    --ngx-ui-duration-normal: 0ms;
+  }
+}

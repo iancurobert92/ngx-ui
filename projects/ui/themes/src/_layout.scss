@@ -1,0 +1,40 @@
+:root {
+  /* Spacing scale */
+  --ngx-ui-space-0: 0;
+  --ngx-ui-space-1: 0.25rem;
+  --ngx-ui-space-2: 0.5rem;
+  --ngx-ui-space-3: 0.75rem;
+  --ngx-ui-space-4: 1rem;
+  --ngx-ui-space-5: 1.25rem;
+  --ngx-ui-space-6: 1.5rem;
+  --ngx-ui-space-8: 2rem;
+  --ngx-ui-space-10: 2.5rem;
+  --ngx-ui-space-12: 3rem;
+
+  /* Control dimensions */
+  --ngx-ui-control-height-sm: 2rem;
+  --ngx-ui-control-height-md: 2.5rem;
+  --ngx-ui-control-height-lg: 3rem;
+
+  /* Icon dimensions */
+  --ngx-ui-icon-size-sm: 1rem;
+  --ngx-ui-icon-size-md: 1.25rem;
+  --ngx-ui-icon-size-lg: 1.5rem;
+
+  /* Borders */
+  --ngx-ui-border-width: 1px;
+  --ngx-ui-border-width-strong: 2px;
+
+  /* Radius */
+  --ngx-ui-radius-none: 0;
+  --ngx-ui-radius-sm: 0.25rem;
+  --ngx-ui-radius-md: 0.5rem;
+  --ngx-ui-radius-lg: 0.75rem;
+  --ngx-ui-radius-full: 9999px;
+
+  /* Elevation */
+  --ngx-ui-shadow-none: none;
+  --ngx-ui-shadow-sm: 0 1px 2px rgb(15 23 42 / 0.06);
+  --ngx-ui-shadow-md: 0 4px 8px rgb(15 23 42 / 0.1);
+  --ngx-ui-shadow-lg: 0 12px 24px rgb(15 23 42 / 0.14);
+}

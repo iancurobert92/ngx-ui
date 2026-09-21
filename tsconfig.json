@@ -15,7 +15,8 @@
     "module": "preserve",
     "paths": {
       "@ngx-ui": ["./dist/ui"],
-      "@ngx-ui/grid": ["./dist/ui/grid"]
+      "@ngx-ui/grid": ["./dist/ui/grid"],
+      "@ngx-ui/themes": ["./dist/ui/themes"]
     }
   },
   "angularCompilerOptions": {

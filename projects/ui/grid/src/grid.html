@@ -17,7 +17,7 @@
     @for (item of dataSource(); track item.id) {
       <div
         class="row td"
-        [style.grid-auto-columns]="gridColumnWidths"
+        [style.grid-auto-columns]="gridColumnWidths()"
         [style.grid-auto-rows]="rowHeight()"
       >
         @for (columnDef of columnDefs(); track columnDef.field) {

@@ -1,5 +1,5 @@
 import { NgTemplateOutlet } from '@angular/common';
-import { Component, contentChildren, input, TemplateRef } from '@angular/core';
+import { Component, computed, contentChildren, input, TemplateRef } from '@angular/core';
 import { GridCell, GridCellContext } from './grid-cell';
 
 export interface GridData {
@@ -23,6 +23,14 @@ export class Grid<T extends GridData> {
   readonly columnDefs = input.required<ColumnDef<T>[]>();
   readonly headerHeight = input<string>('1fr');
   readonly rowHeight = input<string>('1fr');
+  readonly isLoading = input<boolean>(false);
+
+  protected readonly gridAutoRows = computed(() => this.headerHeight() + ' ' + '1fr');
+  protected readonly gridColumnWidths = computed(() =>
+    this.columnDefs()
+      .map((c) => c.width || '1fr')
+      .join(' '),
+  );
 
   private readonly cellTemplates = contentChildren(GridCell<T>);
 
@@ -48,11 +56,5 @@ export class Grid<T extends GridData> {
     }
 
     return cell.template;
-  }
-
-  protected get gridColumnWidths(): string {
-    return this.columnDefs()
-      .map((c) => c.width || '1fr')
-      .join(' ');
   }
 }

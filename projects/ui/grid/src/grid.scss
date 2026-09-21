@@ -1,24 +1,40 @@
 $border: var(--ngx-ui-border-width) solid var(--ngx-ui-color-border);
 
+:host {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
 .grid {
   font-family: var(--ngx-ui-font-family-sans);
   font-size: var(--ngx-ui-font-size-sm);
   display: grid;
   overflow-x: auto;
   border: $border;
+  border-radius: var(--ngx-ui-radius-md);
+  height: 100%;
 }
 
 .row {
   display: grid;
   grid-auto-flow: column;
+  border-bottom: $border;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
 
   &:not(:last-of-type) {
-    border-bottom: $border;
+    border-right: $border;
   }
 }
 
 .th {
   font-weight: bold;
+  background-color: var(--ngx-ui-color-surface-hover);
 }
 
 .td {
@@ -30,12 +46,15 @@ $border: var(--ngx-ui-border-width) solid var(--ngx-ui-color-border);
   }
 }
 
-.column {
+.loading-overlay {
+  position: absolute;
   display: flex;
   align-items: center;
-  padding: 0.5rem;
-
-  &:not(:last-of-type) {
-    border-right: $border;
-  }
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: var(--ngx-ui-color-surface-disabled);
+  opacity: var(--ngx-ui-opacity-disabled);
+  top: 0;
+  left: 0;
 }

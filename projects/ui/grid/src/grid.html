@@ -1,7 +1,7 @@
-<div class="grid">
+<div class="grid" [style.grid-auto-rows]="gridAutoRows()">
   <div
     class="row th"
-    [style.grid-auto-columns]="gridColumnWidths"
+    [style.grid-auto-columns]="gridColumnWidths()"
     [style.grid-auto-rows]="headerHeight()"
   >
     @for (columnDef of columnDefs(); track columnDef.field) {
@@ -10,25 +10,30 @@
       </div>
     }
   </div>
-  @for (item of dataSource(); track item.id) {
-    <div
-      class="row td"
-      [style.grid-auto-columns]="gridColumnWidths"
-      [style.grid-auto-rows]="rowHeight()"
-    >
-      @for (columnDef of columnDefs(); track columnDef.field) {
-        <div class="column">
-          <ng-container
-            [ngTemplateOutlet]="getCellTemplate(columnDef.field)"
-            [ngTemplateOutletContext]="{
-              $implicit: item,
-              item: item,
-              value: item[columnDef.field],
-            }"
-          >
-          </ng-container>
-        </div>
-      }
-    </div>
-  }
+  <div class="tbody" [style.min-height]="rowHeight()">
+    @if (isLoading()) {
+      <div class="loading-overlay">Loading...</div>
+    }
+    @for (item of dataSource(); track item.id) {
+      <div
+        class="row td"
+        [style.grid-auto-columns]="gridColumnWidths"
+        [style.grid-auto-rows]="rowHeight()"
+      >
+        @for (columnDef of columnDefs(); track columnDef.field) {
+          <div class="column">
+            <ng-container
+              [ngTemplateOutlet]="getCellTemplate(columnDef.field)"
+              [ngTemplateOutletContext]="{
+                $implicit: item,
+                item: item,
+                value: item[columnDef.field],
+              }"
+            >
+            </ng-container>
+          </div>
+        }
+      </div>
+    }
+  </div>
 </div>

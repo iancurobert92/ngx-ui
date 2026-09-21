@@ -20,6 +20,7 @@ const meta: Meta<Grid<Employee>> = {
   argTypes: {
     getCellTemplate: { table: { disable: true } },
     gridColumnWidths: { table: { disable: true } },
+    gridAutoRows: { table: { disable: true } },
   } as unknown as Meta<Grid<Employee>>['argTypes'],
 };
 
